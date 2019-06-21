@@ -1,0 +1,21 @@
+<div class="characters">
+    <div *ngFor="let person of people">
+  
+
+      <ul><li class="personName">Name: {{ person.name }} </li><ol><li><b>Gender:</b>
+        {{ person.gender }} </li><li><b>Height:</b> {{ person.height }} </li><li><b>Skin color:</b> {{ person.skin_color }}</li><li><b>Weight:</b> {{ person.mass }} </li></ol></ul>
+      
+  
+    </div>
+  </div>
+  <div class="Grid">
+      <div class="Grid-cell">
+  <div class="pagination">
+    <button (click)="previousPage()"
+    [disabled]="!previous"
+    >previous</button>
+    <button (click)="nextPage()"
+    [disabled]="!next">next</button>
+  </div>
+  </div>
+  </div>

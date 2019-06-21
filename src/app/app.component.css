@@ -8,12 +8,11 @@ ul {
 
 .Grid-cell {
   flex: 1;
-  background-color: rgb(66, 66, 66);
+  background-color: #424242;
 }
 
 .Grid-cell {
   display: flex;
   justify-content: space-evenly;
   align-items: flex-end;
-  
 }

@@ -1,0 +1,23 @@
+.thumb {
+  height: 111px;
+  width: auto;
+}
+
+.thumb:hover {
+  cursor: pointer;
+  opacity: .5;
+}
+
+.preview {
+  height: auto;
+  width: 443px;
+  display: none;
+}
+
+.active {
+  opacity: .5;
+}
+
+.show {
+  display: block;
+}

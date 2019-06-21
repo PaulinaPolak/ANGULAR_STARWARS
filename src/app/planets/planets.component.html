@@ -1,0 +1,26 @@
+<div class="planets">
+  <div *ngFor="let planet of planets">
+
+    <!-- planet -->
+    <ul>
+      <li class="planetName">Name: {{ planet.name }} </li>
+      <ol>
+        <li><b>Terrian:</b>
+          {{ planet.terrain }} </li>
+        <li><b>Population:</b> {{ planet.population }} </li>
+        <li><b>Climate: </b>{{ planet.climate }}</li>
+        <li><b>Gravity: </b>{{ planet.gravity }} </li>
+      </ol>
+    </ul>
+
+
+  </div>
+</div>
+<div class="Grid">
+  <div class="Grid-cell">
+    <div class="pagination">
+      <button (click)="previousPage()" [disabled]="!previous">previous</button>
+      <button (click)="nextPage()" [disabled]="!next">next</button>
+    </div>
+  </div>
+</div>
