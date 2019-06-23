@@ -26,6 +26,10 @@ const Routes: Routes = [
 
   },
   {
+    path: 'characters/:page',
+    component: CharactersComponent,
+  },
+  {
     path: 'characters',
     component: CharactersComponent,
   },

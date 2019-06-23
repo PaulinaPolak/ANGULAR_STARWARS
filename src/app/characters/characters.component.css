@@ -1,3 +1,8 @@
+.pagination {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 ul {
   font-family: "Roboto", sans-serif;
   font-size: 0.8em;
@@ -6,7 +11,7 @@ ul {
 }
 
 button {
-  margin: 20px;
+  margin: 2px;
   border: 0.16em solid rgba(255, 255, 255, 0);
   border-radius: 2em;
   font-family: "Roboto", sans-serif;
@@ -21,6 +26,14 @@ button:hover {
 
 button:disabled {
   background-color: gray;
+}
+
+.active {
+  border: solid 1px #242424;
+}
+
+.pageNumber {
+  padding: 4px 11px;
 }
 
 .personName {
@@ -68,4 +81,11 @@ footer {
   margin-right: 30px;
   margin-bottom: 0px;
   margin-top: 0px;
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  width: 500px;
 }

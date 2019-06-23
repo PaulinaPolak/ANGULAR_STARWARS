@@ -8,6 +8,34 @@
   
     </div>
   </div> -->
+<div class="pagination">
+  <mat-toolbar
+  class="toolbar">
+    <button (click)="previousPage()"
+
+            class="previous-button button"
+            [disabled]="!previous"
+            >
+      previous
+    </button>
+  
+    <button class="pageNumber" *ngFor="let pageIndex of pages"
+            [class.active]="currentPage == pageIndex"
+            (click)="getPageByIndex(pageIndex)">
+      {{ pageIndex }}
+    </button>
+  
+    <button (click)="nextPage()"
+
+            class="next-button button"
+            [disabled]="!next"
+    >
+    next
+    </button>
+  </mat-toolbar>
+</div>
+
+<br>
 
   <div class="characters">
     <div *ngFor="let person of people">
@@ -39,33 +67,6 @@
   </div>
   </div> -->
 
-
-  <mat-toolbar color="primary"
-class="toolbar">
-	<button (click)="previousPage()"
-          mat-raised-button
-          color="accent"
-          class="previous-button button"
-          [disabled]="!previous"
-          >
-    previous
-  </button>
-
-  <button *ngFor="let pageIndex of pages"
-          mat-button
-          [class.active]="page == pageIndex"
-          (click)="getPageByIndex(pageIndex)">
-    {{ pageIndex }}
-  </button>
-
-  <button (click)="nextPage()"
-          mat-raised-button
-          class="next-button button"
-          [disabled]="!next"
-  >
-  next
-  </button>
-</mat-toolbar>
 
 
 
