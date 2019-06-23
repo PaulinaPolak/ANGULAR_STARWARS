@@ -1,4 +1,4 @@
-<div class="characters">
+<!-- <div class="characters">
     <div *ngFor="let person of people">
   
 
@@ -7,8 +7,27 @@
       
   
     </div>
-  </div>
-  <div class="Grid">
+  </div> -->
+
+  <div class="characters">
+    <div *ngFor="let person of people">
+  <mat-accordion>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <ul><li class="personName">Name: {{ person.name }} </li></ul>
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <ul><li><b>Gender:</b>
+        {{ person.gender }} </li><li><b>Height:</b> {{ person.height }} </li><li><b>Skin color:</b> {{ person.skin_color }}</li><li><b>Weight:</b> {{ person.mass }} </li></ul>
+        <mat-divider class="divider"></mat-divider>
+      </mat-expansion-panel>
+      </mat-accordion>
+      </div>
+      </div>
+
+
+  <!-- <div class="Grid">
       <div class="Grid-cell">
   <div class="pagination">
     <button (click)="previousPage()"
@@ -18,11 +37,45 @@
     [disabled]="!next">next</button>
   </div>
   </div>
-  </div>
+  </div> -->
+
+
+  <mat-toolbar color="primary"
+class="toolbar">
+	<button (click)="previousPage()"
+          mat-raised-button
+          color="accent"
+          class="previous-button button"
+          [disabled]="!previous"
+          >
+    previous
+  </button>
+
+  <button *ngFor="let pageIndex of pages"
+          mat-button
+          [class.active]="page == pageIndex"
+          (click)="getPageByIndex(pageIndex)">
+    {{ pageIndex }}
+  </button>
+
+  <button (click)="nextPage()"
+          mat-raised-button
+          class="next-button button"
+          [disabled]="!next"
+  >
+  next
+  </button>
+</mat-toolbar>
+
+
+
+
+
+
   <footer>
     <div class="row">
       <div class="yellow-line"></div>
       <img class="footer-img"
-          src="https://www.pngkit.com/png/full/823-8231261_sticker-de-randomissou-sur-other-jarjar-binks-qui.png"/>
+          src="../assets/jarjar.png"/>
     </div>
     </footer>

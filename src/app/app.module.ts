@@ -9,6 +9,15 @@ import { PlanetsComponent } from './planets/planets.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { HomeComponent } from './home/home.component';
 import { PostersComponent } from './posters/posters.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule, MatCheckboxModule } from '@angular/material';
+import { MatIconModule } from '@angular/material/icon';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatListModule } from '@angular/material/list';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatCardModule } from '@angular/material/card';
+import { PersonprofileComponent } from './personprofile/personprofile.component';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 const Routes: Routes = [
   {
@@ -47,12 +56,22 @@ const Routes: Routes = [
     NavigationComponent,
     HomeComponent,
     PostersComponent,
+    PersonprofileComponent,
   ],
   imports: [
     RouterModule.forRoot(Routes),
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatCheckboxModule,
+    MatIconModule,
+    MatProgressSpinnerModule,
+    MatListModule,
+    MatToolbarModule,
+    MatCardModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]

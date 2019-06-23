@@ -1,0 +1,17 @@
+<div class="characters">
+  <div *ngFor="let person of people">
+<mat-accordion>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <h1 class="personName">Name: {{ person.name }} </h1>
+      </mat-panel-title>
+      <mat-panel-description>
+        <ul><li><b>Gender:</b>
+          {{ person.gender }} </li><li><b>Height:</b> {{ person.height }} </li><li><b>Skin color:</b> {{ person.skin_color }}</li><li><b>Weight:</b> {{ person.mass }} </li></ul>
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    </mat-expansion-panel>
+    </mat-accordion>
+    </div>
+    </div>
