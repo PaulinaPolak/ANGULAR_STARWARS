@@ -37,26 +37,25 @@ export class CharactersComponent implements OnInit {
   public ngOnInit(): void {
     const url = 'https://swapi.co/api/people/?format=json';
     this.getPage(url);
-}
+  }
 
-private getPage(url: string): void {
-  
-  const response = this.http.get(url);
-  response.subscribe((data: SwapiResponse) => {
-    const planets: Person[] = data.results;
-    // console.log(planets);
-    this.people = planets;
-    this.next = data.next;
-    this.previous = data.previous;
-  });
-}
+  private getPage(url: string): void {
+
+    const response = this.http.get(url);
+    response.subscribe((data: SwapiResponse) => {
+      const characters: Person[] = data.results;
+      this.people = characters;
+      this.next = data.next;
+      this.previous = data.previous;
+    });
+  }
 
 
-public previousPage(): void {
-  this.getPage(this.previous);
-}
+  public previousPage(): void {
+    this.getPage(this.previous);
+  }
 
-public nextPage(): void {
-  this.getPage(this.next);
-}
+  public nextPage(): void {
+    this.getPage(this.next);
+  }
 }

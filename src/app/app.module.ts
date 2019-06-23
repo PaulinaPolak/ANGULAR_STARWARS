@@ -32,6 +32,11 @@ const Routes: Routes = [
     path: 'posters',
     component: PostersComponent,
   },
+  {
+    path: '',
+    redirectTo: 'home',
+    pathMatch: 'full'
+  }
 ];
 
 @NgModule({

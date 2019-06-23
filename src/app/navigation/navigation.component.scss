@@ -4,7 +4,7 @@ nav {
 
 a {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  color: rgb(136, 136, 136);
+  color: #1a1a1a;
   background-color: rgb(66, 66, 66);
   font-size: 2em;
   display: inline-block;
@@ -16,9 +16,15 @@ a {
 a:hover {
     color: #1a1a1a;
     background-color: #ffc500;
+    text-shadow: none;
 }
 
 a.active {
     background-color: #ffc500;
     color: rgb(43, 43, 43);
+    text-shadow: none;
+}
+
+.naviButton{
+    text-shadow: -1px 0 1px #ffc500, 0 1px 1px #ffc500, 1px 0 1px #ffc500, 0 -1px 1px #ffc500;
 }

@@ -21,3 +21,26 @@
 .show {
   display: block;
 }
+
+footer {
+  position: relative;
+  height: 100px;
+  overflow: hidden;
+}
+
+.yellow-line {
+  position: absolute;
+  background-color: #ffd900;
+  height: 150px;
+  width: 2000px;
+  bottom: 0;
+  transform: rotate(-8deg);
+}
+
+.movietitle {
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 1.2em;
+  color: #272727;
+  text-shadow: -2px 0 2px #ffd900, 0 2px 2px #ffd900, 2px 0 2px #ffd900, 0 -2px 2px #ffd900;
+}

@@ -41,3 +41,27 @@ li {
   color: black;
   list-style: circle;
 }
+
+footer {
+  position: relative;
+  height: 120px;
+  overflow: hidden;
+}
+
+.footer-img {
+  position: absolute;
+  bottom: 5px;
+  width: 100px;
+  margin: 0;
+  right: 15px;
+  transform: scaleX(-1);
+}
+
+.yellow-line {
+  position: absolute;
+  background-color: #ffd900;
+  height: 150px;
+  width: 2000px;
+  bottom: 0;
+  transform: rotate(-8deg);
+}

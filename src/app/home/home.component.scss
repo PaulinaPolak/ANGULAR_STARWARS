@@ -1,28 +1,50 @@
 img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-    margin-bottom: 30px;
-    width: 70%;
-  }
-
-  h1 {
-    text-align: center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-shadow: 4px 4px 4px rgb(104, 104, 104);
-
-  }
-
-  h2 {
-      font-family: 'Roboto',sans-serif;
-      text-align: center;
-      font-size: 1.1em;
-  }
-
-  h3 {
-    font-family: 'Roboto',sans-serif;
-    text-align: center;
-    font-size: 0.8em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  width: 70%;
 }
 
+h1 {
+  text-align: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-shadow: 4px 4px 4px rgb(104, 104, 104);
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-size: 1.1em;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+footer {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+
+.footer-img {
+  position: absolute;
+  bottom: 0;
+  width: 300px;
+  margin: 0;
+  left: 0;
+  transform: scaleX(-1);
+}
+
+.yellow-line {
+  position: absolute;
+  background-color: #ffd900;
+  height: 150px;
+  width: 2000px;
+  bottom: 0;
+  transform: rotate(-8deg);
+}
