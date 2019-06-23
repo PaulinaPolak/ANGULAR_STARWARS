@@ -1,1 +1,1 @@
-ul{list-style-type:circle}.Grid{display:flex}.Grid-cell{flex:1;background-color:#424242}.Grid-cell{display:flex;justify-content:space-evenly;align-items:flex-end}
+ul{list-style-type:circle}.Grid{display:flex}.Grid-cell{flex:1;background-color:#424242}.Grid-cell{display:flex;justify-content:space-evenly;align-items:flex-end}.container{width:520px}
