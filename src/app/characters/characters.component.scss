@@ -14,10 +14,10 @@ ul {
     margin: 2px;
     border: 0.16em solid rgba(255, 255, 255, 0);
     border-radius: 2em;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     color: black;
     text-align: center;
-    background-color: #ffe600;
+    background-color: #ffd900;
   }
   
   button:hover {
@@ -29,24 +29,31 @@ ul {
   }
   
   .active {
-    border: solid 1px #242424;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
   }
 
   .pageNumber {
-      padding: 4px 11px;
+      padding: 2px 12px;
   }
   
   .personName {
     font-size: 1.2em;
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-    color: #ffe600;
+    color: #757575;
     list-style-image: url("star2.png");
-    text-shadow: 4px 4px 4px #686868;
+    // text-shadow: 4px 4px 4px #686868;
   }
   
+  .fetchedName {
+    color: #ffd900;
+    text-shadow: 4px 4px 4px #686868;
+  }
+
   li {
     color: black;
     list-style: circle;
+    font-family: 'Roboto Condensed', sans-serif;
+
   }
   
   footer {
@@ -88,5 +95,6 @@ ul {
     flex-wrap: wrap;
     height: auto;
     width: 500px;
+    margin-left: 10px;
   }
   
